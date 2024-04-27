@@ -1,0 +1,105 @@
+<!-- HTMT : Hyper Text Markup Language -->
+<!-- Tai lieu tham khao: https://developer.mozilla.org (mdn) => biết thêm các thẻ -->
+<!-- element là cha của tag -->
+<!DOCTYPE html>       <!--Khai báo document type là HTML5  -->
+<html lang="vi">                <!--Định nghĩa phân thân html -->
+  <head>
+    <meta charset="UTF-8" />    <!--Khai báo bộ kí tự sử dụng là UTF-8 -->
+    <meta name="description" content="This is my first web page" /> <!--Khai báo mô tả trang -->
+    <meta name="keywords" content="HTML, CSS, JavaScript" /> <!--Khai báo từ khóa trang -->
+    <meta name="author" content="Vo Van Linh" /> <!--Khai báo tác giả trang -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--Khai báo thiết lập viewport -->
+    <title>My First Web Page</title>          <!--Khai báo tiêu đề trang -->
+    <style>                             
+      #T01 {
+        color: red;
+        font-weight: bold;
+        background-color: blue;
+        width: 100px;
+      }
+      .People {
+        color: green;
+        font-weight: bold;
+        background-color: yellow;
+        width: 100px;
+      }
+    </style>      
+    <script></script>         <!--Khai báo script->JavaScript  -->
+    </script>
+  </head>
+  <body>
+    <h1>My First Web Page</h1>        <!--Khai báo thẻ heading 1->tiêu đề lớn nhất, nên xài duy nhất một thẻ h1 -->
+    <h2>My First Web Page</h2>        <!--Khai báo thẻ heading 2->tiêu đề lớn vừa -->
+    <h3>My First Web Page</h3>        <!--Khai báo thẻ heading 3->tiêu đề vừa -->
+    <h4>My First Web Page</h4>        <!--Khai báo thẻ heading 4->tiêu đề nhỏ -->
+    <h5>My First Web Page</h5>        <!--Khai báo thẻ heading 5->tiêu đề nhỏ vừa -->
+    <h6>My First Web Page</h6>        <!--Khai báo thẻ heading 6->tiêu đề nhỏ nhất -->
+    <b></b>        <!--Khai báo thẻ bold->in đậm -->
+    <strong></strong>        <!--Khai báo thẻ strong->in đậm và quan trọng -->
+    <i></i>        <!--Khai báo thẻ italic->in nghiêng -->
+    <em></em>        <!--Khai báo thẻ emphasis->in nghiêng và quan trọng -->
+    <u></u>        <!--Khai báo thẻ underline->gạch chân -->
+    <p></p>        <!--Khai báo thẻ paragraph->đoạn văn bản -->
+    <div></div>               <!--Khai báo thẻ div -->
+    <span></span>             <!--Khai báo thẻ span -->
+    <!-- ul>li      Khai báo thẻ unorderlist và list -->
+    <!-- ul>li*5     Khai báo thẻ unorderlist và list với 5 phần tử -->  
+    <!--< ul>li*5{Item $}    Khai báo thẻ unorderlist và list với 5 phần tử có nội dung là Item 1, Item 2, Item 3, Item 4, Item 5 -->
+    <ul>                      <!--Khai báo thẻ unorderlist -->
+      <li id="T01">Vo Van Linh</li>     <!--Khai báo thẻ list có id là T01 -->
+      <li>Nguyen Van A</li>
+      <li>Tran Thi Binh</li>
+    </ul> 
+    <ol reversed></ol>        <!--Khai báo thẻ orderlist có thuộc tính reversed -->
+    <ol type="A"></ol>        <!--Khai báo thẻ orderlist có thuộc tính type là A -->
+    <ol>                      <!--Khai báo thẻ orderlist -->
+      <li class="People">Huynh Man</li>           <!--Khai báo thẻ list có class là People -->
+      <li class="People">Do Tien Manh</li>
+      <li class="People">Vo Van Loc</li>
+    </ol> 
+    <table border="1px">      <!--Khai báo thẻ table -->
+      <tr>                    <!--Khai báo thẻ tablerow -->
+        <th>Ho Va Ten</th>     <!--Khai báo thẻ tableheader -->
+        <th>Lop</th>
+        <th>Dia Chi</th>
+      </tr>
+      <tr>
+        <td>Vo Van Linh</td>      <!--Khai báo thẻ tabledata -->
+        <td>22CTT4</td>
+        <td>Quang Nam</td>
+      </tr>
+      <tr>
+        <td>Nguyen Van A</td>
+        <td>22CTT4</td>
+        <td>Quang Binhq</td>
+      </tr>
+    </table>
+    <br />              <!--Khai báo thẻ break => xuống dòng -->
+    <hr />              <!--Khai báo thẻ horizontal rule => đường kẻ ngang -->
+    <a href="https://www.google.com">Google</a>     <!--Khai báo thẻ anchor gắn kèm đường dẫn -->
+    <a href="https://www.google.com"><img src="img/Huit.jpg" width="100px" /></a>     <!--Khai báo thẻ anchor gắn kèm đường dẫn và ảnh -->
+    <a href="https://www.google.com" target="_blank">Google</a>     <!--Khai báo thẻ anchor gắn kèm đường dẫn và mở trang mới -->
+    <a href="https://www.google.com" target="_self">Google</a>     <!--Khai báo thẻ anchor gắn kèm đường dẫn và mở trang hiện tại -->
+    <a href="https://www.google.com" target="_parent">Google</a>     <!--Khai báo thẻ anchor gắn kèm đường dẫn và mở trang cha -->
+    <a href="https://www.google.com" target="_top">Google</a>     <!--Khai báo thẻ anchor gắn kèm đường dẫn và mở trang trên cùng -->
+    <a href="https://www.google.com" download>Google</a>     <!--Khai báo thẻ anchor gắn kèm đường dẫn và tải về -->
+    <a href ="tel:0123456789">Call me</a>     <!--Khai báo thẻ anchor gắn kèm đường dẫn và gọi điện thoại -->
+    <a href="mailto: HTML@gmail.com">Email me</a>     <!--Khai báo thẻ anchor gắn kèm đường dẫn và gửi email -->
+    
+    <a href="">Google</a>     <!-- Reset lại trang -->
+    <a href="#">Google</a>     <!-- Quay lại đầu trang -->
+    <img src="img/Huit.jpg" width="100px" />        <!--Khai báo thẻ image gắn kèm đường dẫn ảnh và kích thước -->
+    <img src="img/Huit.jpg" alt="Huit" width="100px" height="50px" />        <!--Khai báo thẻ image gắn kèm đường dẫn ảnh, kích thước và mô tả -->
+    <!-- Ta nên set 1 trong 2 thuộc tính width hoặc height để ảnh có tỷ lệ phù hợp hơn -->
+    <!-- Path: Đường dẫn tương đối và tuyệt đối -->
+    <!-- ./ truy cập đường dẫn cùng cấp
+    ../ truy cập đường dẫn cấp trên
+    / truy cập đường dẫn gốc -> đường dẫn tuyệt đối -->
+    <img src="./img/Huit.jpg">        <!--Khai báo thẻ image gắn kèm đường dẫn ảnh tương đối -->
+    <form>                                          <!--Khai báo thẻ form -->                     
+      <input type="text" placeholder="Enter your name" />   <!--Khai báo thẻ input type text nhập dữ liệu -->
+      <input type="submit" value="Submit" />                <!--Khai báo thẻ input type submit để nhấn -->
+      <input type="button" value="Reset" />                <!--Khai báo thẻ input type button để reset -->
+    </form>
+  </body>
+</html>
